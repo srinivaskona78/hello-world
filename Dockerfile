@@ -16,5 +16,5 @@ From tomcat:8-jre8
 
 # Maintainer 
 MAINTAINER "valaxytech@gmail.com" 
-COPY COPY --from=MAVEN_TOOL_CHAIN /tmp/webapp/target/webapp.war /usr/local/tomcat/webapps
+COPY --from=MAVEN_TOOL_CHAIN /tmp/webapp/target/webapp.war /usr/local/tomcat/webapps
 
