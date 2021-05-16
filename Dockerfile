@@ -1,7 +1,7 @@
 FROM maven:3.5.2-jdk-8-alpine AS MAVEN_TOOL_CHAIN
 COPY pom.xml /tmp/
-COPY server /tmp/src/
-COPY webapp /tmp/src/
+COPY server /tmp/
+COPY webapp /tmp/
 WORKDIR /tmp/
 RUN mvn install
 RUN mvn package
