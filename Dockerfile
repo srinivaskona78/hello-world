@@ -3,6 +3,7 @@ COPY pom.xml /tmp/
 COPY server /tmp/src/
 COPY webapp /tmp/src/
 WORKDIR /tmp/
+RUN mvn install
 RUN mvn package
 
 # FROM tomcat:9.0-jre8-alpine
